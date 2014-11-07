@@ -32,7 +32,6 @@ int main(void) {
     st1_len = strlen(st1);
 
     for (i=0; i<st1_len; i++) {
-	  st1[i]= toupper ((int)st1[i]);
 	  st1[st1_len-1-i]= toupper ((int)st1[st1_len-1-i]); 	//hier st1 auch toupper anwenden
       st2[i] = toupper((int)st1[st1_len -1 -i]);
     }
