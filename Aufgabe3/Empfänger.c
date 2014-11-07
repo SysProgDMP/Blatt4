@@ -1,8 +1,13 @@
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h> 
 #include <sys/types.h>
 #include <sys/socket.h>
-
+#include <netinet/in.h>
+#include <arpa/inet.h>
+#include <unistd.h>
+#include <netdb.h>
+ 
 int main(){
 	int fd, err;
 	struct sockaddr_in addr;
@@ -44,7 +49,7 @@ int main(){
 	//Ausgabe der empfangenen Daten
 	int i;
 	for (i=0; i<64;i++){
-		printf ("%s", msg[i]);
+		printf ("%s  ", msg[i]);
 	}
 	
 	int err1;
