@@ -34,8 +34,8 @@ int main (){
 	struct sockaddr_in dest;
 	
 	dest.sin_family = AF_INET;
-	dest.sin_port = htons(4711);
-	dest.sin_addr.s_addr = inet_addr("130.37.193.13");
+	dest.sin_port = htons(4711);						// hier noch die richtigen Daten für den Empfänger eintragen
+	dest.sin_addr.s_addr = inet_addr("130.37.193.13");	// hier also auch noch
 	
 	while (strcmp(run, exit) != 0){
 		strcpy(msg, run);
