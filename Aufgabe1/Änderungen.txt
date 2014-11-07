@@ -1,0 +1,14 @@
+
+1. man musste die Bibliotheken string.h (für strlen) und ctype .h (für toupper) includen
+
+2. In jeder toupper Funktion musste man einen Typecast von char zu int durchführen
+
+3. in Zeile 11 musste man bei der zweiten toupper-Funktion erst noch einen abziehen , bevor man verglichen hat
+
+4.die Übergabe von exit musste in einer extra Zeile gemacht werden ohne den Pointer erneut zu verwenden
+
+5.in der main musste man vor dem Vergleich die toupper auch auf st1 anwenden und nicht nur auf st2
+
+6.im letztendlichen Test zwischen st1 und st2 musste man alle Felder einzeln vergleichen und nicht alle auf einmal
+
+jetzt  sollte es funktionieren 
